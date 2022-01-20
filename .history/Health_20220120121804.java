@@ -11,7 +11,7 @@ class Health {
     //課題3
     //BMIの計算結果を返す
     public double bmi() {
-        double bmi = weight / height / height;
+        bmi = this.weight / this.height / this.height
         return bmi;
     }
 
@@ -19,8 +19,10 @@ class Health {
     //BMIが標準値であればtrue,標準値でなければfalseを返す
     public boolean isHealthy() {
         if(bmi() >= 18.5 && bmi() < 25.0){
+            System.out.println("標準地です");
             return true;
         }
+        System.out.println("標準値の範囲外です");
         return false;
     }
 }
