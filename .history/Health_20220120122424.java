@@ -18,9 +18,6 @@ class Health {
     //課題3
     //BMIが標準値であればtrue,標準値でなければfalseを返す
     public boolean isHealthy() {
-        if(bmi() >= 18.5 && bmi() < 25.0){
-            return true;
-        }
-        return false;
+
     }
 }

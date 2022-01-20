@@ -12,12 +12,12 @@ class Person {
         this.age = age;
         //課題3
         //healthを初期化
-        this.health = new Health();
+        this.health = health;
     }
 
     //課題3
     //healthを使って身長・体重のデータを更新する
-    void updateHealth(double height, double weight) {
-        health.update(height, weight);
-    }
+    //void updateHealth(double height, double weight) {
+    //
+    //}
 }

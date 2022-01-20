@@ -12,7 +12,7 @@ class Person {
         this.age = age;
         //課題3
         //healthを初期化
-        this.health = new Health();
+        this.health = health;
     }
 
     //課題3

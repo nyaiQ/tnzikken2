@@ -7,17 +7,17 @@ class Person {
 
     //課題2(Bot)
     //firstName,lastName,ageを引数としたコンストラクタ
-    Person(String firstName, String lastName, int age) {
+    Person(String firstName, String lastName, int age, Health health) {
         this.name = firstName + " " + lastName;
         this.age = age;
         //課題3
         //healthを初期化
-        this.health = new Health();
+        this.health = health;
     }
 
     //課題3
     //healthを使って身長・体重のデータを更新する
-    void updateHealth(double height, double weight) {
-        health.update(height, weight);
-    }
+    //void updateHealth(double height, double weight) {
+    //
+    //}
 }

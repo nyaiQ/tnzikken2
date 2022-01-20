@@ -5,18 +5,14 @@ public class Main {
     public static void main(String[] args) {
         //課題2(Bot)
         //名前,年齢をPersonクラスを使ったものに変更する
-        String firstName = "Kate";
-        String lastName = "Jones";
-        int age = 20;
-        Person person = new Person(firstName, lastName, age);
+        Person person = new Person("Kate", "Jones", 20);
 
         //課題3
         //身長,体重,BMIをHealthクラスで定義および計算するように変更する
+        Health health = new Health(height, weight, bmi);
         double height = 1.735;
         double weight = 67.0;
-        person.updateHealth(height, weight);
-
-        printData(person);
+        double bmi = weight / height / height;
 
         //課題4(Bot)
         //名前,年齢,身長,体重を入力する機能
@@ -34,13 +30,8 @@ public class Main {
     public static void printData(Person person) {
         System.out.println("私の名前は" + person.name + "です");
         System.out.println("年齢は" + person.age + "歳です");
-        System.out.println("身長は" + person.health.height + "mです");
-        System.out.println("体重は" + person.health.weight + "kgです");
-        System.out.println("BMIは" + person.health.bmi() + "です");
-        if(person.health.isHealthy() == true) {
-            System.out.println("標準値です");
-        }else {
-            System.out.println("標準値の範囲外です");
-        }
+        System.out.println("身長は" + height + "mです");
+        System.out.println("体重は" + weight + "kgです");
+        System.out.println("BMIは" + bmi + "です");
     }
 }
