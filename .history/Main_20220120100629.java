@@ -22,11 +22,6 @@ public class Main {
 
         //課題1
         //名前,年齢,身長,体重,BMIの表示
-        System.out.println("私の名前はkateJonesです");
-        System.out.println("年齢は20歳です");
-        System.out.println("身長は1.735mです");
-        System.out.println("体重は67.0kgです");
-        System.out.println("BMIは22.257472448072814です");
 
     }
     //課題3
